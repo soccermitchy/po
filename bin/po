@@ -36,6 +36,8 @@ if [[ "$(uname -s)" == "Linux" ]]; then
     else
         source "/usr/local/share/po-linux"
     fi
+elif [[ "$(uname -s)" == "CYGWIN_NT-10.0" ]]; then
+    source "/usr/local/share/po-cygwin"
 else
     source "/usr/local/share/po-mac"
 fi
